@@ -1,0 +1,57 @@
+# inv.lef — minimal abstract layout view of the demo inverter ( Liberty-style abstract )
+# NOTE: characterization does NOT produce LEF — LEF is a layout abstract.
+# Production flow: draw the cell in Magic, then  lef write inv.lef
+# (or let a memory/compiler flow emit it). This hand-abstract file is
+# provided so the collateral bundle is complete for the demo.
+
+VERSION 5.7 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO inv
+  CLASS CORE ;
+  FOREIGN inv ;
+  ORIGIN 0 0 ;
+  SYMMETRY X Y ;
+  SITE unit ;   ; generic demo site (not a SkyWater/sky130 layout)
+  SIZE 0.57 BY 1.4 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+      RECT 0.05 0.6 0.15 0.8 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+      RECT 0.45 0.6 0.55 0.8 ;
+    END
+  END Y
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+      RECT 0 1.3 0.57 1.4 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+      RECT 0 0 0.57 0.1 ;
+    END
+  END VSS
+  OBS
+    LAYER li1 ;
+    RECT 0.1 0.2 0.5 1.2 ;
+  END
+END inv
+END LIBRARY

@@ -85,3 +85,7 @@ This extends the "Std-Cell Characterization to Synthesis Pipeline" project
 (ngspice → .lib → Yosys synthesis) by adding **power + crosstalk-noise
 characterization, Liberty internal_power tables, and QA checks** — i.e., the
 noise and power halves of the VSD syllabus, not just timing.
+
+## Certificates
+![](library characterization and modeling part 1 certificate.pdf)
+![](library characterization and modeling part 2 certificate.pdf)

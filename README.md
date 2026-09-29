@@ -87,5 +87,6 @@ characterization, Liberty internal_power tables, and QA checks** — i.e., the
 noise and power halves of the VSD syllabus, not just timing.
 
 ## Certificates
-![](library characterization and modeling part 1 certificate.pdf)
-![](library characterization and modeling part 2 certificate.pdf)
+
+- [Library Characterization and Modeling — Part 1](library%20characterization%20and%20modeling%20part%201%20certificate.pdf)
+- [Library Characterization and Modeling — Part 2](library%20characterization%20and%20modeling%20part%202%20certificate.pdf)
